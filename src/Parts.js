@@ -8,7 +8,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
 });
 
 
-class Features extends React.Component {
+class Parts extends React.Component {
 
 
     render() {
@@ -39,4 +39,4 @@ class Features extends React.Component {
     }
 }
 
-export default Features; 
+export default Parts; 

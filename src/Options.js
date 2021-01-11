@@ -5,7 +5,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
-export default class CartContents extends React.Component{
+export default class Options extends React.Component{
 render(){
     const contents = Object.keys(this.props.selected).map((feature, idx) => {
     const featureHash = feature + '-' + idx;

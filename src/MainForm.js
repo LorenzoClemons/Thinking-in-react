@@ -1,8 +1,8 @@
 import React from 'react'
-import FeatureOptions from './FeatureOptions'
+import Specs from './Specs'
 import Choices from './Choices'
 
-class FeaturesForm extends React.Component {
+class MainForm extends React.Component {
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
@@ -14,7 +14,7 @@ class FeaturesForm extends React.Component {
     return (
       <form className="main__form">
         <h2>Customize your laptop</h2>
-        <FeatureOptions
+        <Specs
           handleUpdate={this.props.handleUpdate}
           store={Choices}
           selected={this.props.selected}
@@ -24,4 +24,4 @@ class FeaturesForm extends React.Component {
   }
 }
 
-export default FeaturesForm;
+export default MainForm;

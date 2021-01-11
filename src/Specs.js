@@ -1,7 +1,7 @@
 import React from 'react'
-import Features from './Features'
+import Parts from './Parts'
 
-class FeatureOptions extends React.Component {
+class Specs extends React.Component {
   render() {
     const features = Object.keys(this.props.store).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
@@ -10,7 +10,7 @@ class FeatureOptions extends React.Component {
           <legend className="feature__name">
             <h3>{feature}</h3>
           </legend>
-          <Features
+          <Parts
             handleUpdate={this.props.handleUpdate}
             store={this.props.store}
             selected={this.props.selected}
@@ -27,4 +27,4 @@ class FeatureOptions extends React.Component {
   }
 }
 
-export default FeatureOptions;
+export default Specs;

@@ -1,10 +1,10 @@
 import React from 'react'
-import CartContents from './CartContents'
-import CartTotal from './CartTotal'
+import Options from './Options'
+import Total from './Total'
 
 
 
-class CartForm extends React.Component{
+class MainSummary extends React.Component{
     render(){
         
         
@@ -12,10 +12,10 @@ class CartForm extends React.Component{
             <div>
             <section className="main__summary">
                 <h2>Your cart</h2>
-                <CartContents
+                <Options
                 selected = {this.props.selected}
                  />
-                <CartTotal
+                <Total
                 selected = {this.props.selected}
                 />
               </section>
@@ -25,4 +25,4 @@ class CartForm extends React.Component{
 
 }
 
-export default CartForm;
+export default MainSummary;

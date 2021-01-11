@@ -5,7 +5,7 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
     currency: 'USD'
   });
 
-export default class CartTotal extends React.Component{
+export default class Total extends React.Component{
 
     render(){
         const total = Object.keys(this.props.selected).reduce(

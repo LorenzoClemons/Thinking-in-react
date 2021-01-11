@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import ChooseForm from './ChooseForm';
+import MainForm from './MainForm';
 import Header from './Header'
-import CartForm from './CartForm'
+import MainSummary from './MainSummary'
 
 export default class App extends Component {
   state = {
@@ -38,11 +38,11 @@ export default class App extends Component {
         <Header/>
         <div className="App">
             <main className="holder">
-        <ChooseForm
+        <MainForm
           selected ={this.state.selected}
           handleUpdate={(feature, newValue)=>this.updateFeature(feature, newValue)}
         />
-        <CartForm
+        <MainSummary
          selected = {this.state.selected}
        />
         </main>
